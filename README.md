@@ -1,7 +1,8 @@
 # Laravel Cloud Deploy
 
-This GitHub Action will trigger a deployment on Laravel Cloud.
+This GitHub Action will trigger a deployment on [Laravel Cloud](https://laravel.cloud).
 
+Check out the [documentation](https://cloud.laravel.com/docs/deployments#deploy-hooks) to retrieve your webhook URL.
 ## Usage
 
 ```yaml
