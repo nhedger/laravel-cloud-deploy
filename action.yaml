@@ -1,0 +1,13 @@
+name: Laravel Cloud Deploy
+author: nhedger
+description: Trigger a Laravel Cloud deployment
+inputs:
+  webhook:
+    description: The webhook URL to trigger the deployment
+    required: true
+runs:
+  using: composite
+  steps:
+    - run: |
+        curl --silent -X POST -H "Accept: application/json" -H "Content-Type: application/json" "${{ inputs.webhook }}" > /dev/null
+      shell: bash
